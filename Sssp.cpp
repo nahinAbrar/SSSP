@@ -12,7 +12,7 @@ vector<int>distancE(50);
 
 list<int> topoOrder;
 bool visited[50];
-int cost[50][50];
+
 
 void dfs(int source){
     visited[source] = 1;
@@ -102,9 +102,12 @@ int main()
 
 
 
+    cout << "Source: " << sourceNode<<endl;
+    cout << "Des\t" << "Cost\t" << "Path\t" << endl;
     for(i=1; i<=nodes;i++)
     {
-        cout << distancE[i] << " ";
+        cout << i << "\t";
+        cout << distancE[i] << " " << endl;
     }
     return 21;
 }
@@ -119,7 +122,7 @@ int main()
 1 5 1
 5 3 2
 5 6 4
-6 1 1*/
+6 4 1*/
 
 
 /*Output
